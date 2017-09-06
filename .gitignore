@@ -1,0 +1,8 @@
+[Oo]bj/
+[Bb]in/
+*.suo
+[Dd]ebug/
+[Bb]uild/
+/packages/
+!packages/repositories.config
+.vs/
