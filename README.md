@@ -6,7 +6,7 @@ Sometimes I code up an if/else block or a switch statement to handle all the dif
 of an enum and I think, "It would be great if the compiler would warn me if I ever added
 another value to that enum and forgot to handle it here."
 
-So I wrote this compiler extension.  You have to opt-in to this check, and you do it with:
+So I wrote this analyzer.  You have to opt-in to this check, and you do it with:
 
 ```C#
 throw new net.ajennings.EnumNotExhaustedException<T>();
@@ -48,7 +48,7 @@ error.  I don't think it will prevent the project from compiling, though.
 
 If enums are cast from integers or if they are received from other assemblies, they can take values other than the named
 constants in the enum definition.  Enums are really just integers with some syntactic sugar.  If you're doing that stuff,
-this extension can't keep you safe at run-time.
+this analyzer can't keep you safe at run-time.
 
 ## FAQ
 
